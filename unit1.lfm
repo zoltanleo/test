@@ -1,8 +1,0 @@
-object frmMain: TfrmMain
-  Left = 432
-  Height = 254
-  Top = 34
-  Width = 406
-  Caption = 'Main form'
-  DesignTimePPI = 120
-end

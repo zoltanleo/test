@@ -1,0 +1,35 @@
+object frmFrameB: TfrmFrameB
+  Left = 432
+  Height = 240
+  Top = 34
+  Width = 320
+  Caption = 'PseudoFrame B'
+  ClientHeight = 240
+  ClientWidth = 320
+  DesignTimePPI = 120
+  OnShow = FormShow
+  object CheckBox1: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    Left = 114
+    Height = 24
+    Top = 50
+    Width = 93
+    BorderSpacing.Top = 50
+    Caption = 'CheckBox1'
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = CheckBox1
+    AnchorSideTop.Side = asrBottom
+    Left = 138
+    Height = 20
+    Top = 114
+    Width = 44
+    BorderSpacing.Top = 40
+    Caption = 'Label1'
+  end
+end

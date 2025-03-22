@@ -1,0 +1,52 @@
+object frmMain: TfrmMain
+  Left = 432
+  Height = 254
+  Top = 34
+  Width = 406
+  Caption = 'Main form'
+  ClientHeight = 254
+  ClientWidth = 406
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  object btnCallModalForm: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = rgItems
+    AnchorSideTop.Side = asrBottom
+    Left = 135
+    Height = 30
+    Top = 154
+    Width = 136
+    AutoSize = True
+    BorderSpacing.Top = 10
+    Caption = 'Call Modal Form'
+    TabOrder = 0
+    OnClick = btnCallModalFormClick
+  end
+  object rgItems: TRadioGroup
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    Left = 85
+    Height = 134
+    Top = 10
+    Width = 237
+    AutoFill = True
+    BorderSpacing.Top = 10
+    Caption = 'rgItems'
+    ChildSizing.LeftRightSpacing = 30
+    ChildSizing.TopBottomSpacing = 10
+    ChildSizing.HorizontalSpacing = 10
+    ChildSizing.VerticalSpacing = 10
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    TabOrder = 1
+    OnClick = rgItemsClick
+  end
+end
