@@ -1,11 +1,11 @@
 object frmModal: TfrmModal
   Left = 432
-  Height = 397
+  Height = 395
   Top = 34
-  Width = 522
+  Width = 984
   Caption = 'Modal form'
-  ClientHeight = 397
-  ClientWidth = 522
+  ClientHeight = 395
+  ClientWidth = 984
   DesignTimePPI = 120
   OnCreate = FormCreate
   OnDestroy = FormDestroy
@@ -13,16 +13,17 @@ object frmModal: TfrmModal
   object pnlTop: TPanel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
-    AnchorSideRight.Control = Owner
+    AnchorSideRight.Control = splitModal
     AnchorSideRight.Side = asrBottom
     Left = 0
     Height = 63
     Top = 0
-    Width = 522
+    Width = 652
     Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 10
     Caption = 'pnlTop'
     ClientHeight = 63
-    ClientWidth = 522
+    ClientWidth = 652
     TabOrder = 0
     object Button1: TButton
       AnchorSideTop.Control = pnlTop
@@ -42,7 +43,7 @@ object frmModal: TfrmModal
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = pnlTop
       AnchorSideRight.Side = asrBottom
-      Left = 418
+      Left = 548
       Height = 24
       Top = 19
       Width = 93
@@ -55,18 +56,19 @@ object frmModal: TfrmModal
   end
   object pnlBottom: TPanel
     AnchorSideLeft.Control = Owner
-    AnchorSideRight.Control = Owner
+    AnchorSideRight.Control = splitModal
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
     Left = 0
     Height = 63
-    Top = 334
-    Width = 522
+    Top = 332
+    Width = 652
     Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Right = 10
     Caption = 'pnlBottom'
     ClientHeight = 63
-    ClientWidth = 522
+    ClientWidth = 652
     TabOrder = 1
     object BitBtn1: TBitBtn
       AnchorSideLeft.Control = pnlBottom
@@ -161,7 +163,7 @@ object frmModal: TfrmModal
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = pnlBottom
       AnchorSideRight.Side = asrBottom
-      Left = 477
+      Left = 607
       Height = 34
       Top = 14
       Width = 34
@@ -246,19 +248,47 @@ object frmModal: TfrmModal
       }
     end
   end
-  object pnlParent: TPanel
+  object scrboxModal: TScrollBox
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = pnlTop
     AnchorSideTop.Side = asrBottom
-    AnchorSideRight.Control = Owner
+    AnchorSideRight.Control = splitModal
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = pnlBottom
     Left = 0
-    Height = 271
+    Height = 269
     Top = 63
-    Width = 522
+    Width = 652
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
     Anchors = [akTop, akLeft, akRight, akBottom]
-    Caption = 'pnlParent'
+    BorderSpacing.Right = 10
     TabOrder = 2
+  end
+  object splitModal: TSplitter
+    Left = 656
+    Height = 397
+    Top = -2
+    Width = 6
+    Align = alNone
+    AutoSnap = False
+  end
+  object Memo1: TMemo
+    AnchorSideLeft.Control = splitModal
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 666
+    Height = 375
+    Top = 10
+    Width = 308
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Around = 10
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 4
   end
 end

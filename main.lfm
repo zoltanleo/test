@@ -1,14 +1,15 @@
 object frmMain: TfrmMain
+  AnchorSideTop.Side = asrBottom
   Left = 432
   Height = 254
   Top = 34
   Width = 406
+  Anchors = [akLeft]
   Caption = 'Main form'
   ClientHeight = 254
   ClientWidth = 406
   DesignTimePPI = 120
   OnCreate = FormCreate
-  OnDestroy = FormDestroy
   OnShow = FormShow
   object btnCallModalForm: TButton
     AnchorSideLeft.Control = Owner
@@ -48,5 +49,21 @@ object frmMain: TfrmMain
     ChildSizing.ControlsPerLine = 1
     TabOrder = 1
     OnClick = rgItemsClick
+  end
+  object chbScrboxAutoSize: TCheckBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = btnCallModalForm
+    AnchorSideTop.Side = asrBottom
+    Left = 77
+    Height = 24
+    Top = 194
+    Width = 253
+    BorderSpacing.Top = 10
+    Caption = 'ScrboxModal.AutoSize (True/False)'
+    Checked = True
+    State = cbChecked
+    TabOrder = 2
+    OnChange = chbScrboxAutoSizeChange
   end
 end

@@ -5,7 +5,7 @@ unit frame_b;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
 
@@ -14,6 +14,8 @@ type
   TfrmFrameB = class(TForm)
     CheckBox1: TCheckBox;
     Label1: TLabel;
+    Shape1: TShape;
+    procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
 
@@ -33,6 +35,12 @@ implementation
 procedure TfrmFrameB.FormShow(Sender: TObject);
 begin
   Label1.Caption:= Self.Name;
+end;
+
+procedure TfrmFrameB.FormCreate(Sender: TObject);
+begin
+  Shape1.Constraints.MinWidth:= CheckBox1.Width * 7;
+  Shape1.Height:= 0;
 end;
 
 end.

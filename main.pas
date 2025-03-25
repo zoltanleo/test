@@ -14,16 +14,19 @@ type
 
   TfrmMain = class(TForm)
     btnCallModalForm: TButton;
+    chbScrboxAutoSize: TCheckBox;
     rgItems: TRadioGroup;
     procedure btnCallModalFormClick(Sender: TObject);
+    procedure chbScrboxAutoSizeChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure rgItemsClick(Sender: TObject);
   private
     FFrameType: TMyType;
+    FScrbxAutoScroll: Boolean;
   public
     property FrameType: TMyType read FFrameType;
+    property ScrbxAutoScroll: Boolean read FScrbxAutoScroll;
   end;
 
 var
@@ -39,14 +42,10 @@ uses
 
 { TfrmMain }
 
-procedure TfrmMain.FormDestroy(Sender: TObject);
-begin
-//
-end;
-
 procedure TfrmMain.FormShow(Sender: TObject);
 begin
   rgItemsClick(Sender);
+  chbScrboxAutoSizeChange(Sender);
 end;
 
 procedure TfrmMain.rgItemsClick(Sender: TObject);
@@ -54,21 +53,17 @@ begin
   case rgItems.ItemIndex of
     0: FFrameType:= mtFrameA;
     1: FFrameType:= mtFrameB;
-    2: FFrameType:= mtNone;
   end;
 end;
 
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
-  FFrameType:= mtNone;
-
   with rgItems do
   begin
     AutoSize:= True;
     Items.Clear;
-    Items.Add('Show Pseudoframe A');
-    Items.Add('Show Pseudoframe B');
-    Items.Add('Show without Pseudoframe');
+    Items.Add('Show frame A');
+    Items.Add('Show frame B');
     ItemIndex:= 0;
   end;
 end;
@@ -81,10 +76,16 @@ begin
 
   try
     tmpFrm.FrameType:= Self.FrameType;
+    tmpFrm.scrboxModal.AutoScroll:= ScrbxAutoScroll;
     tmpFrm.ShowModal;
   finally
     FreeAndNil(tmpFrm);
   end;
+end;
+
+procedure TfrmMain.chbScrboxAutoSizeChange(Sender: TObject);
+begin
+  FScrbxAutoScroll:= chbScrboxAutoSize.Checked;
 end;
 
 end.

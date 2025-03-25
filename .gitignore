@@ -27,4 +27,5 @@
 #
 
 /lib
+/debug
 *.exe

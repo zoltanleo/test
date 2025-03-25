@@ -16,10 +16,12 @@ type
     BitBtn1: TBitBtn;
     Button1: TButton;
     CheckBox1: TCheckBox;
+    Memo1: TMemo;
     pnlTop: TPanel;
     pnlBottom: TPanel;
-    pnlParent: TPanel;
+    scrboxModal: TScrollBox;
     SpeedButton1: TSpeedButton;
+    splitModal: TSplitter;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -44,7 +46,6 @@ procedure TfrmModal.FormCreate(Sender: TObject);
 begin
   FFrameA:= nil;
   FFrameB:= nil;
-  FrameType:= mtNone;
 
   pnlBottom.Color:= clMoneyGreen;
   pnlTop.Color:= clCream;
@@ -64,7 +65,7 @@ begin
         FFrameA:= TfrmFrameA.Create(Self);
         with FFrameA do
         begin
-          Parent:= pnlParent;
+          Parent:= scrboxModal;
           BorderStyle:= bsNone;
           Align:= alClient;
           ShowInTaskBar:= stNever;
@@ -76,7 +77,7 @@ begin
         FFrameB:= TfrmFrameB.Create(Self);
         with FFrameB do
         begin
-          Parent:= pnlParent;
+          Parent:= scrboxModal;
           BorderStyle:= bsNone;
           Align:= alClient;
           ShowInTaskBar:= stNever;
@@ -84,7 +85,7 @@ begin
         end;
       end
     else
-      pnlParent.Caption:= 'Frame has not been created';
+      //pnlParent.Caption:= 'Frame has not been created';
   end;
 end;
 

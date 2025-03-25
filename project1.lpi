@@ -36,9 +36,9 @@
       <Unit0>
         <Filename Value="project1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="5"/>
         <CursorPos Y="15"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -48,9 +48,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="47"/>
-        <CursorPos X="29" Y="56"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="59"/>
+        <CursorPos X="52" Y="79"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -60,10 +60,10 @@
         <ComponentName Value="frmFrameA"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="13"/>
-        <CursorPos X="30" Y="35"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="17"/>
+        <CursorPos X="30" Y="43"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit2>
@@ -73,10 +73,10 @@
         <ComponentName Value="frmFrameB"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="6"/>
-        <CursorPos X="30" Y="35"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="14"/>
+        <CursorPos X="52" Y="42"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit3>
@@ -87,9 +87,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="39"/>
-        <CursorPos X="22" Y="55"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="45"/>
+        <CursorPos Y="49"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit4>
@@ -98,128 +98,129 @@
         <IsPartOfProject Value="True"/>
         <HasResources Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="42" Y="11"/>
-        <UsageCount Value="22"/>
+        <CursorPos X="14" Y="11"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit5>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="main.pas"/>
-        <Caret Line="52" Column="19" TopLine="34"/>
+        <Filename Value="frame_b.pas"/>
       </Position1>
       <Position2>
-        <Filename Value="main.pas"/>
-        <Caret Line="56" TopLine="35"/>
+        <Filename Value="frame_b.pas"/>
       </Position2>
       <Position3>
         <Filename Value="form_modal.pas"/>
-        <Caret Line="10" Column="55"/>
+        <Caret Line="55" Column="22" TopLine="39"/>
       </Position3>
       <Position4>
         <Filename Value="form_modal.pas"/>
-        <Caret Line="22" Column="24" TopLine="8"/>
+        <Caret Line="54" Column="22" TopLine="38"/>
       </Position4>
       <Position5>
         <Filename Value="form_modal.pas"/>
-        <Caret Line="40" Column="17" TopLine="17"/>
+        <Caret Line="55" Column="22" TopLine="39"/>
       </Position5>
       <Position6>
-        <Filename Value="main.pas"/>
-        <Caret Line="26" Column="48" TopLine="11"/>
+        <Filename Value="form_modal.pas"/>
+        <Caret Line="56" Column="22" TopLine="40"/>
       </Position6>
       <Position7>
-        <Filename Value="main.pas"/>
-        <Caret Line="24" TopLine="11"/>
+        <Filename Value="frame_a.pas"/>
+        <Caret Line="35" Column="30" TopLine="11"/>
       </Position7>
       <Position8>
-        <Filename Value="u_common.pas"/>
-        <Caret Line="13"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="35" Column="30" TopLine="6"/>
       </Position8>
       <Position9>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="25" Column="30" TopLine="7"/>
+        <Filename Value="frame_a.pas"/>
+        <Caret Line="37" Column="30" TopLine="14"/>
       </Position9>
       <Position10>
-        <Filename Value="u_common.pas"/>
-        <Caret Line="11" Column="42"/>
+        <Filename Value="frame_a.pas"/>
+        <Caret Line="42" Column="50" TopLine="20"/>
       </Position10>
       <Position11>
         <Filename Value="form_modal.pas"/>
-        <Caret Line="25" Column="66" TopLine="12"/>
+        <Caret Line="76" Column="31" TopLine="56"/>
       </Position11>
       <Position12>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="41" Column="3" TopLine="27"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="71" Column="24" TopLine="47"/>
       </Position12>
       <Position13>
         <Filename Value="form_modal.pas"/>
-        <Caret Line="42" Column="3" TopLine="28"/>
+        <Caret Line="79" Column="52" TopLine="52"/>
       </Position13>
       <Position14>
         <Filename Value="form_modal.pas"/>
-        <Caret Line="43" Column="3" TopLine="29"/>
+        <Caret Line="49" TopLine="45"/>
       </Position14>
       <Position15>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="44" Column="3" TopLine="30"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="64" Column="18" TopLine="51"/>
       </Position15>
       <Position16>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="46" Column="25" TopLine="31"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="29" Column="48" TopLine="29"/>
       </Position16>
       <Position17>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="64" Column="20" TopLine="42"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="30" Column="60" TopLine="21"/>
       </Position17>
       <Position18>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="76" Column="21" TopLine="66"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="88" Column="19" TopLine="66"/>
       </Position18>
       <Position19>
-        <Filename Value="form_modal.pas"/>
-        <Caret Line="55" Column="22" TopLine="61"/>
+        <Filename Value="frame_a.pas"/>
+        <Caret Line="43" TopLine="20"/>
       </Position19>
       <Position20>
-        <Filename Value="main.pas"/>
-        <Caret Line="55" Column="8" TopLine="41"/>
+        <Filename Value="frame_a.pas"/>
+        <Caret Line="42" TopLine="19"/>
       </Position20>
       <Position21>
-        <Filename Value="main.pas"/>
-        <Caret Line="54" Column="17" TopLine="41"/>
+        <Filename Value="frame_a.pas"/>
+        <Caret Line="41" Column="50" TopLine="12"/>
       </Position21>
       <Position22>
-        <Filename Value="main.pas"/>
-        <Caret Line="25" Column="14" TopLine="12"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="36" Column="30" TopLine="6"/>
       </Position22>
       <Position23>
-        <Filename Value="main.pas"/>
-        <Caret Line="56" Column="9" TopLine="41"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="35" Column="30" TopLine="6"/>
       </Position23>
       <Position24>
-        <Filename Value="main.pas"/>
-        <Caret Line="62" Column="12" TopLine="40"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="37" Column="30" TopLine="14"/>
       </Position24>
       <Position25>
-        <Filename Value="main.pas"/>
-        <Caret Line="25" TopLine="23"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="42" Column="20" TopLine="13"/>
       </Position25>
       <Position26>
-        <Filename Value="main.pas"/>
-        <Caret Line="71" Column="22" TopLine="45"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="41" Column="20" TopLine="13"/>
       </Position26>
       <Position27>
-        <Filename Value="frame_a.pas"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="42" Column="3" TopLine="20"/>
       </Position27>
       <Position28>
         <Filename Value="frame_b.pas"/>
+        <Caret Line="41" Column="3" TopLine="19"/>
       </Position28>
       <Position29>
-        <Filename Value="frame_a.pas"/>
-        <Caret TopLine="5"/>
+        <Filename Value="frame_b.pas"/>
+        <Caret Line="42" Column="3" TopLine="20"/>
       </Position29>
       <Position30>
         <Filename Value="frame_b.pas"/>
+        <Caret Line="41" Column="3" TopLine="19"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>

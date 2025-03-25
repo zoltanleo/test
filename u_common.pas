@@ -8,7 +8,7 @@ uses
   Classes, SysUtils;
 
 type
-  TMyType = (mtNone, mtFrameA, mtFrameB);
+  TMyType = (mtFrameA, mtFrameB);
 
 implementation
 

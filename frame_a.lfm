@@ -7,6 +7,7 @@ object frmFrameA: TfrmFrameA
   ClientHeight = 240
   ClientWidth = 320
   DesignTimePPI = 120
+  OnCreate = FormCreate
   OnShow = FormShow
   object Button1: TButton
     AnchorSideLeft.Control = Owner
@@ -31,5 +32,18 @@ object frmFrameA: TfrmFrameA
     Width = 44
     BorderSpacing.Top = 40
     Caption = 'Label1'
+  end
+  object Shape1: TShape
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 33
+    Top = 197
+    Width = 300
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Around = 10
   end
 end
