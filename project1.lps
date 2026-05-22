@@ -2,60 +2,28 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="12"/>
+    <Version Value="13"/>
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
         <Filename Value="project1.lpr"/>
-        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
       </Unit>
       <Unit>
-        <Filename Value="main.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmMain"/>
-        <HasResources Value="True"/>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="Form1"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="24"/>
-        <CursorPos X="20" Y="43"/>
-        <UsageCount Value="20"/>
+        <UnitName Value="Unit1"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="frame_a.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmFrameA"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="frame_b.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmFrameB"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="form_modal.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="frmModal"/>
-        <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <TopLine Value="23"/>
+        <CursorPos X="30" Y="38"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="-1"/>
