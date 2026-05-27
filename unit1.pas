@@ -5,15 +5,17 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, laz.VirtualTrees;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, StdCtrls;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    vst: TLazVirtualStringTree;
+    Edit1: TEdit;
+    TrackBar1: TTrackBar;
     procedure FormCreate(Sender: TObject);
+    procedure TrackBar1Change(Sender: TObject);
   private
 
   public
@@ -29,21 +31,22 @@ implementation
 
 { TForm1 }
 
-procedure TForm1.FormCreate(Sender: TObject);
-var
-  i: Integer;
-  Node: PVirtualNode = nil;
+procedure TForm1.TrackBar1Change(Sender: TObject);
 begin
-  vst.RootNodeCount:= 10;
-  vst.TreeOptions.MiscOptions:= vst.TreeOptions.MiscOptions + [toCheckSupport];
-  Node:= vst.GetFirst;
-  while Assigned(Node) do
-  begin
-    if (vst.AbsoluteIndex(Node) mod 2 = 0)
-      then Node^.CheckType:= ctCheckBox
-      else Node^.CheckType:= ctRadioButton;
-    Node:= Node^.NextSibling;
-  end;
+  Edit1.Text:= IntToStr(TrackBar1.Position);
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  Self.Constraints.MinWidth:= Canvas.TextWidth('W') * 30;
+  Self.AutoSize:= True;
+  Edit1.ReadOnly:= True;
+  Edit1.Constraints.MinWidth:= Canvas.TextWidth('00000');
+  Edit1.MaxLength:= 3;
+  TrackBar1.Min:= 0;
+  TrackBar1.Max:= 100;
+  TrackBar1.Frequency:= 10;
+  TrackBar1Change(Sender);
 end;
 
 end.
